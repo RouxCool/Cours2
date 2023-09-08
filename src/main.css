@@ -11,14 +11,26 @@ header:not(button) {
     background-color: rgba(127, 127, 127, 0.2);
     padding: 10px;
     width: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://www.arizona-dream.com/usa/telecharger/fond_ecran/grand_teton/grand_teton_2.jpg");
+	height: 300px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 2px solid #007bff;
 }
 
 header a, .navbar-toggler {
-    color: black;
+    color: white;
+    text-decoration: underline;
+    text-decoration-line: overline;
+    text-decoration-style: double;
 }
 
 header a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /***** Footer *****/
@@ -32,6 +44,11 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 footer .first {
     width: 100%;
     margin: 0 auto;
@@ -43,10 +60,10 @@ footer .first {
 
 footer .first .infos, footer .first .onglet {
     width: 20%;
-    margin: 0 auto;
     display: inline-block;
     vertical-align: top;
-    margin: 1%;
+    margin-left: 20%;
+    padding: 1%;
 }
 
 footer .first .onglet div a {
@@ -158,10 +175,18 @@ button[type="submit"] {
     }
 
     footer .first .infos, footer .first .onglet, .footer .second div {
+        display: block;
         width: 90%;
         margin: 0 auto;
-        display: block;
-        text-align: cenrter;
+        padding: 0;
+    }
+
+    footer .second {
+        width: 100%;
+    }
+
+    footer .second .two {
+        text-align: center;
     }
 }
 

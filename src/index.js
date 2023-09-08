@@ -1,4 +1,3 @@
-// index.js
 import { validateAge } from './ageValidator';
 import { validateEmail } from './emailValidator';
 import './main.css';
